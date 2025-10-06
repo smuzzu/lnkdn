@@ -1,6 +1,5 @@
 const { Builder, By, Key, until } = require('selenium-webdriver');
 const assert = require('assert');
-const { expect } = require('chai');
 const chrome = require('selenium-webdriver/chrome');
 const fs = require('fs');
 const readline = require('readline');
