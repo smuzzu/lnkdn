@@ -10,7 +10,9 @@ jobs:
       - node/install:
           install-yarn: true
           node-version: '16.13'
-      - run: node test.js
+      - run: |
+	  npm install selenium-webdriver
+          node test.js
 workflows:
   test_my_app:
     jobs:
