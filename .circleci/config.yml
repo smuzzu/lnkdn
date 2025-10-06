@@ -13,7 +13,7 @@ jobs:
       - run: |
           apt-get update -y
           sudo apt-get install -y libnspr4 
-          npm install -g chromedriver
+          sudo npm install -g chromedriver
           chromedriver --version
           node test.js
 
