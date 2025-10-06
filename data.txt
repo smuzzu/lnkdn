@@ -1,0 +1,44 @@
+10Pearls;true
+AgileEngine;false
+AI Acquisition;false
+America Digital;true
+Azumo;false
+Bionic Talent;true
+Canonical;true
+Capgemini;true
+Concentrix;true
+Congreso Latinoamericano Tecnología y Negocios America Digital;true
+Connect Tech+Talent;true
+CXM;true
+Dev.Pro;false
+Digital Silk - Growing Brands Online;true
+DoorDash;true
+Empresa Confidencial;true
+EPAM Systems;true
+Etho IT Solutions;true
+ExporTalent;true
+Housecall Pro;false
+Frontline Data Solutions;false
+FullStack Labs;false
+Gini Talent;true
+Jobgether;true
+Lumenalta;false
+Meaningful | Growth & Webflow Enterprise Agency;false
+Mindrift;true
+Nanuk;true
+Nearsure;false
+Oracle;false
+Persona;true
+Right Hook Digital;true
+Revolut;true
+Scalepex;true
+Sonatafy Technology | Nearshore Software Development;false
+Smart Apartment Data;true
+Smarter Contact;false
+StartupsHub;false
+Tech Talents Latam;true
+Teravision Technologies;true
+The Dignify Solutions;true
+Trilogy;true
+TripleTen;false
+Xogito Group;true
