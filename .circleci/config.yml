@@ -13,8 +13,7 @@ jobs:
       - run: |
           sudo apt-get update -y
           sudo apt-get install -y libnspr4 
-          sudo npm install -g chromedriver
-          chromedriver --version
+          npm install selenium-webdriver
           node test.js
 
 workflows:
