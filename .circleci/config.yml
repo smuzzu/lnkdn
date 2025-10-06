@@ -11,6 +11,8 @@ jobs:
           install-yarn: true
           node-version: '24.9.0'
       - run: |
+          apt-get update -y
+          sudo apt-get install -y libnspr4 
           npm install -g chromedriver
           chromedriver --version
           node test.js
