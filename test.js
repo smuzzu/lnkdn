@@ -56,6 +56,8 @@ async function runTest() {
 
 
     await driver.quit();
+
+
 }
 
 
@@ -139,7 +141,6 @@ async function processAll(driver,baseUrl,argentina){
     await processUrl(driver,url,tarascaJobList);
 
 
-    assert.equal("this","will fail");
 
 
 }
