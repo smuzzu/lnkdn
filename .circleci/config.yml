@@ -12,10 +12,7 @@ jobs:
     steps:
       - checkout
       - browser-tools/install_browser_tools
-      - browser-tools/install_chrome
-      - browser-tools/install_chromedriver
       - run: | 
-          sudo chmod +x /usr/local/bin/chromedriver
           google-chrome --version
           chromedriver --version
           node test.js
