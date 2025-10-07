@@ -18,7 +18,7 @@ jobs:
       - browser-tools/install_chromedriver
       - node/install
       - run: | 
-          sudo npm install -g selenium-webdriver
+          sudo chmod +x /usr/local/bin/chromedriver
           google-chrome --version
           chromedriver --version
           node test.js
