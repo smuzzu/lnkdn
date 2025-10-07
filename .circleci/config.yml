@@ -21,7 +21,7 @@ jobs:
           sudo chmod +x /usr/local/bin/chromedriver
           google-chrome --version
           chromedriver --version
-          node test.js
+          node node project/test/test.js
 
 workflows:
   your-workflow:

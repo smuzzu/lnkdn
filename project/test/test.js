@@ -1,6 +1,7 @@
 const { Builder, By, Key, until } = require('selenium-webdriver');
 const assert = require('assert');
 const chrome = require('selenium-webdriver/chrome');
+
 const fs = require('fs');
 const readline = require('readline');
 const argentinaBaseUrl="https://www.linkedin.com/jobs/search/?f_E=4%2C5%2C6&f_TPR=r86400&f_WT=2%2C3&geoId=100446943&keywords=";
