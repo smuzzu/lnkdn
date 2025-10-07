@@ -14,9 +14,9 @@ jobs:
     steps:
       - checkout
       - jq/install
+      - node/install
       - browser-tools/install_chrome
       - browser-tools/install_chromedriver
-      - node/install
       - run: | 
           sudo chmod +x /usr/local/bin/chromedriver
           google-chrome --version
