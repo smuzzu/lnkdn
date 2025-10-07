@@ -2,19 +2,17 @@ version: 2.1
 
 orbs:
   browser-tools: circleci/browser-tools@2.3.1
-  jq: circleci/jq@3.0.2
-  node: circleci/node@7.2.0
 
 
 
 jobs:
   the-job:
     docker:
-      - image: cimg/base:2025.10
+      - image: cimg/node:24.9.0
     steps:
       - checkout
-      - jq/install
       - node/install
+      - browser-tools/install_browser_tools
       - browser-tools/install_chrome
       - browser-tools/install_chromedriver
       - run: | 
