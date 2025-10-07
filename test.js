@@ -27,6 +27,7 @@ function delay(timeInSeconds) {
 
 async function runTest() {
 
+
     processFileLineByLine('data.txt');
 
 
@@ -137,6 +138,8 @@ async function processAll(driver,baseUrl,argentina){
     url = baseUrl + "usd";
     await processUrl(driver,url,tarascaJobList);
 
+
+    assert.equal("this","will fail");
 
 
 }
