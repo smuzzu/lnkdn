@@ -11,6 +11,7 @@ jobs:
       - image: cimg/node:24.9.0
     steps:
       - checkout
+      - browser-tools/install_browser_tools
       - run: | 
           npm install --save selenium-webdriver
           node test.js
