@@ -17,7 +17,10 @@ jobs:
       - browser-tools/install_chrome
       - browser-tools/install_chromedriver
       - node/install
-      - run: 
+      - run: | 
+          sudo npm install -g selenium-webdriver
+          google-chrome --version
+          chromedriver --version
           node test.js
 
 workflows:
