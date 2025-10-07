@@ -11,12 +11,10 @@ jobs:
       - image: cimg/node:24.9.0
     steps:
       - checkout
-      - browser-tools/install_browser_tools
       - run: | 
-          google-chrome --version
-          chromedriver --version
           npm install --save selenium-webdriver
           node test.js
+          error
 
 workflows:
   your-workflow:
