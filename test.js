@@ -57,7 +57,6 @@ async function runTest() {
 
     await driver.quit();
 
-    assert.equal("this","will fail");
 
 }
 
