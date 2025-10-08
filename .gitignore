@@ -1,1 +1,4 @@
 node_modules/
+setEnv.bat
+run.bat
+mySyncOutput.txt

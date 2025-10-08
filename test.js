@@ -20,7 +20,6 @@ var tarascaJobList = new Map();
 
 
 
-
 function delay(timeInSeconds) {
     return new Promise(resolve => setTimeout(resolve, timeInSeconds * 1000));
 }
@@ -47,15 +46,29 @@ async function runTest() {
 
     await listNewCompanies();
 
+    var dataToSendByEmail="";
+
     for (const key of tarascaJobList.keys()) {
         if (tecnologyJobList.has(key) && seniorityJobList.has(key)){
             console.log(key+" "+tarascaJobList.get(key).company+" "+tarascaJobList.get(key).company+" "+tarascaJobList.get(key).jobTitle)
+            dataToSendByEmail+=key+" "+tarascaJobList.get(key).company+" "+tarascaJobList.get(key).company+" "+tarascaJobList.get(key).jobTitle+"\n";
         }
     }
 
 
 
     await driver.quit();
+
+
+    const filename = "mySyncOutput.txt";
+
+    try {
+        fs.writeFileSync(filename, dataToSendByEmail);
+        console.log("File written successfully synchronously!");
+    } catch (err) {
+        console.error("Error writing file synchronously:", err);
+    }
+
 
 
 }
@@ -65,6 +78,7 @@ async function processAll(driver,baseUrl,argentina){
 
 
     //await login(driver);
+
 
     var url=baseUrl+"java";
     await processUrl(driver,url,tecnologyJobList);
