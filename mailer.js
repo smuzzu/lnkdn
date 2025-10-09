@@ -25,14 +25,17 @@
 
     // Configure email options
     var mailOptions = {
-        from: 'Joseph Mailer <${smtpUserName}>',
-        to: destinationAddress,
-        subject: 'Test Email from Node.js 3',
+        from: '',
+        to: '',
+        subject: '',
         text: ''
     };
 
+    mailOptions.from = 'Joseph Mailer <${smtpUserName}>';
+    mailOptions.to= destinationAddress;
+    mailOptions.subject='new email'; 
 
-    const filePath = 'mySyncOutput.txt';
+    const filePath = 'mySyncOutput2.txt';
     let fileContent = '';
 
     try {

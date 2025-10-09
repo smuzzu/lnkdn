@@ -131,24 +131,31 @@ async function processAll(driver,baseUrl,argentina){
     if (argentina) {
         url = baseUrl + "osde";
         await processUrl(driver,url,tarascaJobList);
+        console.log("tarascaJobList "+tarascaJobList.size);
 
         url = baseUrl + "prepaga";
         await processUrl(driver,url,tarascaJobList);
+        console.log("tarascaJobList "+tarascaJobList.size);
 
         url = baseUrl + "bono";
         await processUrl(driver,url,tarascaJobList);
+        console.log("tarascaJobList "+tarascaJobList.size);
 
         url = baseUrl + "bonus";
         await processUrl(driver,url,tarascaJobList);
+        console.log("tarascaJobList "+tarascaJobList.size);
     }else {
         url = baseUrl + "argentina";
         await processUrl(driver,url,tarascaJobList);
+        console.log("tarascaJobList "+tarascaJobList.size);
 
         url = baseUrl + "remote";
         await processUrl(driver,url,tarascaJobList);
+        console.log("tarascaJobList "+tarascaJobList.size);
 
         url = baseUrl + "remoto";
         await processUrl(driver,url,tarascaJobList);
+        console.log("tarascaJobList "+tarascaJobList.size);
     }
 
     url = baseUrl + "usd";
