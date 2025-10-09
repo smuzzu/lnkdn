@@ -33,7 +33,7 @@
     mailOptions.to= 'sebamuzzu@gmail.com';
     mailOptions.subject='new email'; 
 
-    const filePath = 'mySyncOutput2.txt';
+    const filePath = 'mySyncOutput.txt';
     let fileContent = '';
 
     try {

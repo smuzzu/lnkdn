@@ -13,10 +13,10 @@ jobs:
       - checkout
       - browser-tools/install_browser_tools
       - run: | 
-          #npm install --save selenium-webdriver
+          npm install --save selenium-webdriver
           npm install --save nodemailer
           npm install --save dotenv
-          #node test.js
+          node test.js
           node mailer.js
 
 workflows:
