@@ -32,7 +32,7 @@
     };
 
     mailOptions.from = 'Joseph Mailer <${smtpUserName}>';
-    mailOptions.to= destinationAddress;
+    mailOptions.to= 'sebamuzzu@gmail.com';
     mailOptions.subject='new email'; 
 
     const filePath = 'mySyncOutput2.txt';
