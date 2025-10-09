@@ -7,6 +7,11 @@
     const smtpPassword = process.env.ENV_SMTP_PASSWORD;
     const smtpUserName = process.env.ENV_SMTP_USERNAME;
 
+    console.log(destinationAddress);
+    console.log(smtpHostName);
+    console.log(smtpPassword);
+    console.log(smtpUserName);
+
     // Create a transporter object using your SMTP server details
     const transporter = nodemailer.createTransport({
         host: smtpHostName,
@@ -20,10 +25,10 @@
 
     // Configure email options
     var mailOptions = {
-        from: smtpUserName,
+        from: 'Joseph Mailer <${smtpUserName}>',
         to: destinationAddress,
-        subject: 'Test Email from Node.js 2',
-        text: 'This is a test email sent using Nodemailer.'
+        subject: 'Test Email from Node.js 3',
+        text: ''
     };
 
 
