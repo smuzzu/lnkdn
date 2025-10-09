@@ -14,9 +14,7 @@
 
     // Create a transporter object using your SMTP server details
     const transporter = nodemailer.createTransport({
-        host: smtpHostName,
-        port: 587, 
-        secure: false, 
+        service: 'Gmail',
         auth: {
             user: smtpUserName,
             pass: smtpPassword
