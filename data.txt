@@ -3,6 +3,7 @@ AgileEngine;false
 AI Acquisition;false
 America Digital;true
 Azumo;false
+BayRock Labs;true
 Bionic Talent;true
 Canonical;true
 Capgemini;true
@@ -18,6 +19,7 @@ EPAM Systems;true
 Etho IT Solutions;true
 ExporTalent;true
 Housecall Pro;false
+Invisible Expert Marketplace;true
 Frontline Data Solutions;false
 FullStack Labs;false
 Gini Talent;true

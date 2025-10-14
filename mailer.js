@@ -7,10 +7,6 @@
     const smtpPassword = process.env.ENV_SMTP_PASSWORD;
     const smtpUserName = process.env.ENV_SMTP_USERNAME;
 
-    console.log(destinationAddress);
-    console.log(smtpHostName);
-    console.log(smtpPassword);
-    console.log(smtpUserName);
 
     // Create a transporter object using your SMTP server details
     const transporter = nodemailer.createTransport({
